@@ -8,7 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@mui/styles";
-import { useTheme } from "@mui/material";
+import { Container, useTheme } from "@mui/material";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
@@ -53,14 +53,15 @@ export default function Navigation() {
     const [state, setState] = React.useState(false);
 
     return (
-        <>
+        <Box>
             <Box sx={{ flexGrow: 1 }}>
                 <AppBar
                     position="static"
                     sx={{
                         bgcolor: "transparent",
                         position: "absolute",
-                        boxShadow: "none"
+                        boxShadow: "none",
+                        display: { sm: "none" }
                     }}
                 >
                     <Toolbar>
@@ -143,6 +144,6 @@ export default function Navigation() {
                     </Drawer>
                 </React.Fragment>
             </div>
-        </>
+        </Box>
     );
 }

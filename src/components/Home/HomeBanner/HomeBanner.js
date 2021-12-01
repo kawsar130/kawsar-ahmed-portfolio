@@ -1,4 +1,4 @@
-import { Button, Container, Grid, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import Typical from "react-typical";
@@ -18,7 +18,7 @@ const HomeBanner = () => {
             >
                 <Grid
                     container
-                    spacing={2}
+                    spacing={3}
                     sx={{
                         display: "flex",
                         justifyContent: "space-around",
@@ -84,12 +84,12 @@ const HomeBanner = () => {
                             </Typography>
 
                             <a
-                                href="https://github.com/kawsar130/Tourisent"
+                                href="https://drive.google.com/file/d/1Zpr6LBoWIx0GEKzeWuuZ8jumdma3K7R6/view?usp=sharing"
                                 style={{ textDecoration: "none" }}
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <Button sx={{ mx: 1 }} variant="contained">
+                                <Button sx={{ mt: 3 }} variant="contained">
                                     Download Resume
                                 </Button>
                             </a>

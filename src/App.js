@@ -13,6 +13,7 @@ import Blog from "./components/Pages/Blog/Blog";
 import Motobet from "./components/ProjectsDetail/Motobet/Motobet";
 import Tourisent from "./components/ProjectsDetail/Tourisent/Tourisent";
 import BlueMediq from "./components/ProjectsDetail/BlueMediq/BlueMediq";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     return (
@@ -32,6 +33,7 @@ function App() {
 
                     <Route path="*" element={<NotFound />} />
                 </Routes>
+                <Footer></Footer>
             </Router>
         </div>
     );
