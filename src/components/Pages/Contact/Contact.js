@@ -1,12 +1,13 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
-import { Button, TextField, Typography, useTheme } from "@mui/material";
+import { Alert, Button, TextField, Typography, useTheme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/system";
 import emailKey from "../../emailkey.js/emailkey";
 
 const ContactUs = () => {
     const { Service_Id, Template_Id, User_Id } = emailKey;
+    const [contactState, setContactState] = useState(false);
 
     const theme = useTheme();
     const useStyle = makeStyles({
@@ -42,10 +43,11 @@ const ContactUs = () => {
                     console.log(error.text);
                 }
             );
+        setContactState(true);
     };
 
     return (
-        <Box sx={{ py: { xs: 5, sm: 10, md: 15, lg: 20 } }}>
+        <Box sx={{ py: { xs: 5, sm: 5, md: 5, lg: 10 } }}>
             <Box
                 sx={{
                     py: { xs: 5, sm: 5, md: 5, lg: 5 },
@@ -57,62 +59,72 @@ const ContactUs = () => {
                 <Typography variant="h3" sx={{ mb: 3 }}>
                     Contact Me
                 </Typography>
-                <form
-                    ref={form}
-                    onSubmit={sendEmail}
-                    style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center"
-                    }}
-                >
-                    <TextField
-                        name="name"
-                        type="text"
-                        required
-                        id="filled-basic"
-                        label="Your Name"
-                        variant="filled"
-                        className={formWidth}
-                    />
-                    <TextField
-                        name="email"
-                        type="email"
-                        required
-                        id="filled-basic"
-                        label="Your Email"
-                        variant="filled"
-                        className={formWidth}
-                    />
-                    <TextField
-                        name="phone"
-                        type="text"
-                        id="filled-basic"
-                        label="Your Phone Number (Optional)"
-                        variant="filled"
-                        className={formWidth}
-                    />
-
-                    <TextField
-                        name="message"
-                        type="text"
-                        required
-                        id="filled-textarea"
-                        label="Your Message"
-                        multiline
-                        variant="filled"
-                        rows={4}
-                        className={formWidth}
-                    />
-                    <Button
-                        sx={{ mt: 3 }}
-                        onClick={sendEmail}
-                        variant="contained"
-                        color="info"
+                {!contactState ? (
+                    <form
+                        ref={form}
+                        onSubmit={sendEmail}
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center"
+                        }}
                     >
-                        Send Email
-                    </Button>
-                </form>
+                        <TextField
+                            name="name"
+                            type="text"
+                            required
+                            id="filled-basic"
+                            label="Your Name"
+                            variant="filled"
+                            className={formWidth}
+                        />
+                        <TextField
+                            name="email"
+                            type="email"
+                            required
+                            id="filled-basic"
+                            label="Your Email"
+                            variant="filled"
+                            className={formWidth}
+                        />
+                        <TextField
+                            name="phone"
+                            type="text"
+                            id="filled-basic"
+                            label="Your Phone Number (Optional)"
+                            variant="filled"
+                            className={formWidth}
+                        />
+
+                        <TextField
+                            name="message"
+                            type="text"
+                            required
+                            id="filled-textarea"
+                            label="Your Message"
+                            multiline
+                            variant="filled"
+                            rows={4}
+                            className={formWidth}
+                        />
+                        <Button
+                            sx={{ mt: 3 }}
+                            onClick={sendEmail}
+                            variant="contained"
+                            color="info"
+                        >
+                            Send Email
+                        </Button>
+                    </form>
+                ) : (
+                    <Alert
+                        severity="info"
+                        sx={{ textAlign: "center", width: "50%", mx: "auto" }}
+                    >
+                        Message Sent Successfully. I Will Response to you soon.
+                        Good Day!
+                    </Alert>
+                )}
             </Box>
         </Box>
     );
