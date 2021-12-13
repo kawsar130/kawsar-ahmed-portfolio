@@ -60,8 +60,7 @@ export default function Navigation() {
                     sx={{
                         bgcolor: "transparent",
                         position: "absolute",
-                        boxShadow: "none",
-                        display: { sm: "none" }
+                        boxShadow: "none"
                     }}
                 >
                     <Toolbar>

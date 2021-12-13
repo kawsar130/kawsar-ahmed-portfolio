@@ -1,9 +1,11 @@
 import React from "react";
+import Navigation from "../../Navigation/Navigation";
 
 const Blog = () => {
     return (
         <div>
-            <h2>This is Blog Page</h2>
+            <Navigation></Navigation>
+            <h2>Blog is coming soon. Stay connected.</h2>
         </div>
     );
 };
