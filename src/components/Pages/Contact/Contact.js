@@ -56,7 +56,7 @@ const Contact = () => {
                     borderRadius: 10
                 }}
             >
-                <Typography variant="h3" sx={{ mb: 3 }}>
+                <Typography variant="h3" sx={{ fontWeight: "bold", mb: 4 }}>
                     Contact Me
                 </Typography>
                 {!contactState ? (

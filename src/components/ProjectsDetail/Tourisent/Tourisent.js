@@ -26,19 +26,22 @@ const Tourisent = () => {
                         mx: "auto"
                     }}
                 >
-                    <Typography variant="h3" sx={{ mb: 10 }}>
+                    <Typography variant="h4" sx={{ mb: 5 }}>
                         Tourisent Screenshot
                     </Typography>
-                    <Grid item xs={12} sm={12} md={12}>
-                        <Grid container spacing={2}>
+                    <Box>
+                        <Grid container>
                             <Grid
                                 item
                                 xs={12}
                                 sm={12}
-                                md={4}
+                                md={3.8}
                                 style={{
-                                    boxShadow: "1px 1px 10px rgba(0, 0, 0, 0.3"
+                                    boxShadow:
+                                        "1px 1px 10px rgba(0, 0, 0, 0.3)",
+                                    borderRadius: "10px"
                                 }}
+                                sx={{ m: 1 }}
                             >
                                 <img
                                     style={{
@@ -53,10 +56,13 @@ const Tourisent = () => {
                                 item
                                 xs={12}
                                 sm={12}
-                                md={4}
+                                md={3.8}
                                 style={{
-                                    boxShadow: "1px 1px 10px rgba(0, 0, 0, 0.3"
+                                    boxShadow:
+                                        "1px 1px 10px rgba(0, 0, 0, 0.3)",
+                                    borderRadius: "10px"
                                 }}
+                                sx={{ m: 1 }}
                             >
                                 <img
                                     style={{
@@ -71,10 +77,13 @@ const Tourisent = () => {
                                 item
                                 xs={12}
                                 sm={12}
-                                md={4}
+                                md={3.8}
                                 style={{
-                                    boxShadow: "1px 1px 10px rgba(0, 0, 0, 0.3"
+                                    boxShadow:
+                                        "1px 1px 10px rgba(0, 0, 0, 0.3)",
+                                    borderRadius: "10px"
                                 }}
+                                sx={{ m: 1 }}
                             >
                                 <img
                                     style={{
@@ -124,8 +133,8 @@ const Tourisent = () => {
                                 </Button>
                             </a>
                         </Box>
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={12}>
+                    </Box>
+                    <Box sx={{ mt: 5 }}>
                         <Box className="banner-header-text">
                             <Typography
                                 fontWeight="bold"
@@ -171,7 +180,7 @@ const Tourisent = () => {
                                 Node.JS, MongoDB, Express.JS.
                             </Typography>
                         </Box>
-                    </Grid>
+                    </Box>
                 </Grid>
             </Box>
         </Box>

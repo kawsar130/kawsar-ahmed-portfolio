@@ -1,12 +1,26 @@
-import { Button, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import Typical from "react-typical";
 import bannerMainImg from "../../../images/profile_photo.jpg";
 
 import "./HomeBanner.css";
+import { makeStyles } from "@mui/styles";
 
 const HomeBanner = () => {
+    const useStyle = makeStyles({
+        contactInfo: {
+            display: "flex",
+            alignItems: "center",
+            padding: "8px 0 8px 0"
+        },
+        icon: {
+            marginRight: "15px"
+        }
+    });
+
+    const { contactInfo, icon } = useStyle();
+
     return (
         <Box className="banner-header">
             <Box
@@ -22,8 +36,8 @@ const HomeBanner = () => {
                         display: "flex",
                         justifyContent: "space-around",
                         bgcolor: "white",
-                        py: { xs: 4, sm: 4, md: 5, lg: 10 },
-                        px: { xs: 2, sm: 4, md: 5 },
+                        py: { xs: 4, sm: 4, md: 5, lg: 5 },
+                        px: { xs: 2, sm: 4, md: 2, lg: 2 },
                         mt: 10,
                         borderRadius: 4,
                         width: { xl: "80%", lg: "90%", md: "100%" },
@@ -100,17 +114,51 @@ const HomeBanner = () => {
                                 learn and work with new technologies that
                                 encourage me to go further with my dreams.
                             </Typography>
-
-                            <a
-                                href="https://drive.google.com/file/d/1Zpr6LBoWIx0GEKzeWuuZ8jumdma3K7R6/view?usp=sharing"
-                                style={{ textDecoration: "none" }}
-                                target="_blank"
-                                rel="noreferrer"
+                            <Box
+                                sx={{
+                                    pt: { xs: 0, sm: 0, md: 1, lg: 1, xl: 3 },
+                                    color: "gray"
+                                }}
                             >
-                                <Button sx={{ mt: 3 }} variant="contained">
-                                    Download Resume
-                                </Button>
-                            </a>
+                                <Box className={contactInfo}>
+                                    <img
+                                        className={icon}
+                                        src="https://i.ibb.co/gZQGsWF/calendar.png"
+                                        alt=""
+                                        width="20px"
+                                    />
+                                    <Typography>31 December, 1997</Typography>
+                                </Box>
+                                <Box className={contactInfo}>
+                                    <img
+                                        className={icon}
+                                        src="https://i.ibb.co/Kr7TpFn/email.png"
+                                        alt=""
+                                        width="20px"
+                                    />
+                                    <Typography>
+                                        kawsarahmed130@gmail.com
+                                    </Typography>
+                                </Box>
+                                <Box className={contactInfo}>
+                                    <img
+                                        className={icon}
+                                        src="https://i.ibb.co/r4rnqFP/phone.png"
+                                        alt=""
+                                        width="20px"
+                                    />
+                                    <Typography>+88 01722-499529</Typography>
+                                </Box>
+                                <Box className={contactInfo}>
+                                    <img
+                                        className={icon}
+                                        src="https://i.ibb.co/bH0KYLH/home.png"
+                                        alt=""
+                                        width="20px"
+                                    />
+                                    <Typography>Dhaka, Bangladesh</Typography>
+                                </Box>
+                            </Box>
                         </Box>
                     </Grid>
                 </Grid>

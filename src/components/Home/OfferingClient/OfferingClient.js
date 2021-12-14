@@ -46,8 +46,8 @@ const OfferingClient = () => {
     return (
         <Container sx={{ py: 10 }}>
             <Box>
-                <Typography variant="h3">
-                    Technology I use for Development
+                <Typography variant="h3" sx={{ fontWeight: "bold", mb: 2 }}>
+                    SkillSet
                 </Typography>
             </Box>
             <Container sx={{ mt: 5 }}>

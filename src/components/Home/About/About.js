@@ -1,6 +1,7 @@
 import { Container, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import { Button } from "@mui/material";
 
 import SkillBar from "react-skillbars";
 
@@ -60,7 +61,7 @@ const About = () => {
                         <Box>
                             <Typography
                                 variant="h3"
-                                sx={{ fontWeight: "bold", mb: 3 }}
+                                sx={{ fontWeight: "bold", mb: 2 }}
                             >
                                 About Myself
                             </Typography>
@@ -68,16 +69,28 @@ const About = () => {
                                 I am Kawsar Ahmed, a frontend React Web
                                 Developer especially working on MERN Stack
                                 development. For three years, I have been
-                                involved with computer programming. Initially, I
-                                worked with Robotics and Automation where I
-                                needed to work with both software and hardware.
+                                working with computer programming. Initially, I
+                                started with Robotics and Automation where I
+                                worked with both software and hardware together.
                                 In 2021, I started my journey with Web
                                 Development and started to learn with my full
-                                efforts. At this stage, I think I am very able
-                                to do some professional projects that make a
-                                significant reason to learn more to go further
-                                in this sector.
+                                effort. Now I am working as a full time
+                                freelance Web Developer and building projects
+                                for my Local Clients.
+                                <Typography sx={{ fontWeight: "bold", mt: 1 }}>
+                                    Here you can check my Resume.
+                                </Typography>
                             </Typography>
+                            <a
+                                href="https://drive.google.com/file/d/1Zpr6LBoWIx0GEKzeWuuZ8jumdma3K7R6/view?usp=sharing"
+                                style={{ textDecoration: "none" }}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <Button sx={{ mt: 1 }} variant="contained">
+                                    Download Resume
+                                </Button>
+                            </a>
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={6}>

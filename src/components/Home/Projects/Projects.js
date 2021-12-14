@@ -14,8 +14,14 @@ const Projects = () => {
                     justifyContent: "center"
                 }}
             >
-                <Typography variant="h3">My Latest Projects</Typography>
-                <Box sx={{ mt: 10 }}>
+                <Typography variant="h3" sx={{ fontWeight: "bold" }}>
+                    My Latest Projects
+                </Typography>
+                <Typography variant="body1" sx={{ mt: 3 }}>
+                    Here are my some recent projects. For live preview of
+                    specific project, click on 'Details' below.
+                </Typography>
+                <Box sx={{ mt: 5 }}>
                     <Grid container spacing={2}>
                         <Grid item xs={12} md={4}>
                             <Box>
