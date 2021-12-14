@@ -48,7 +48,8 @@ const About = () => {
         <Box
             sx={{
                 textAlign: "left",
-                py: { xs: 10, sm: 15, lg: 20 },
+                pt: { xs: 10, sm: 15, md: "40vh", lg: "40vh", xl: "400px" },
+                pb: { xs: 10, sm: 15, md: 15, lg: 20 },
                 Height: "100%",
                 display: "flex",
                 alignItems: "center",

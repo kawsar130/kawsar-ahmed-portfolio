@@ -8,7 +8,7 @@ const Projects = () => {
         <Box sx={{ bgcolor: "aliceblue" }}>
             <Container
                 sx={{
-                    p: 10,
+                    py: 10,
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center"
@@ -22,14 +22,25 @@ const Projects = () => {
                     specific project, click on 'Details' below.
                 </Typography>
                 <Box sx={{ mt: 5 }}>
-                    <Grid container spacing={2}>
+                    <Grid container spacing={3}>
                         <Grid item xs={12} md={4}>
-                            <Box>
+                            <Box
+                                sx={{
+                                    p: 2,
+                                    bgcolor: "#e1fcfb",
+                                    borderRadius: 2,
+                                    boxShadow:
+                                        "1px 1px 20px rgba(46, 30, 102, 0.2) inset"
+                                }}
+                            >
                                 <Box>
                                     <img
                                         src="https://i.ibb.co/NNHH8mZ/motobet-thumb.jpg"
                                         alt=""
-                                        style={{ width: "100%" }}
+                                        style={{
+                                            width: "100%",
+                                            borderRadius: "5px"
+                                        }}
                                     />
                                 </Box>
                                 <Box>
@@ -40,9 +51,9 @@ const Projects = () => {
                                         MotoBet
                                     </Typography>
                                     <Typography>
-                                        Motorcycle Retail Shop where customer
-                                        can check motorcycle specification and
-                                        place order.
+                                        MotoBet provides motorcycle
+                                        specification and customer can place
+                                        order.
                                     </Typography>
                                     <Link
                                         to="/projects/motobet"
@@ -59,12 +70,23 @@ const Projects = () => {
                             </Box>
                         </Grid>
                         <Grid item xs={12} md={4}>
-                            <Box>
+                            <Box
+                                sx={{
+                                    p: 2,
+                                    bgcolor: "#e1fcfb",
+                                    borderRadius: 2,
+                                    boxShadow:
+                                        "1px 1px 20px rgba(46, 30, 102, 0.2) inset"
+                                }}
+                            >
                                 <Box>
                                     <img
                                         src="https://i.ibb.co/bNRrMwR/tourisent-thumb.jpg"
                                         alt=""
-                                        style={{ width: "100%" }}
+                                        style={{
+                                            width: "100%",
+                                            borderRadius: "5px"
+                                        }}
                                     />
                                 </Box>
                                 <Box>
@@ -93,12 +115,23 @@ const Projects = () => {
                             </Box>
                         </Grid>
                         <Grid item xs={12} md={4}>
-                            <Box>
+                            <Box
+                                sx={{
+                                    p: 2,
+                                    bgcolor: "#e1fcfb",
+                                    borderRadius: 2,
+                                    boxShadow:
+                                        "1px 1px 20px rgba(46, 30, 102, 0.2) inset"
+                                }}
+                            >
                                 <Box>
                                     <img
                                         src="https://i.ibb.co/r2v5Ldw/bluemediq-thumb.jpg"
                                         alt=""
-                                        style={{ width: "100%" }}
+                                        style={{
+                                            width: "100%",
+                                            borderRadius: "5px"
+                                        }}
                                     />
                                 </Box>
                                 <Box>

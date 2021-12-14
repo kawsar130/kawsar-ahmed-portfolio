@@ -22,7 +22,10 @@ const HomeBanner = () => {
     const { contactInfo, icon } = useStyle();
 
     return (
-        <Box className="banner-header">
+        <Box
+            className="banner-header"
+            sx={{ height: { md: "500px", lg: "500px", xl: "600px" } }}
+        >
             <Box
                 sx={{
                     p: { xs: 0, sm: 3, md: 6 },
@@ -41,6 +44,7 @@ const HomeBanner = () => {
                         mt: 10,
                         borderRadius: 4,
                         width: { xl: "80%", lg: "90%", md: "100%" },
+                        maxWidth: "1600px",
                         mx: "auto"
                     }}
                 >
