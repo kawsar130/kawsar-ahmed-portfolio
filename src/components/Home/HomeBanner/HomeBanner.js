@@ -18,25 +18,41 @@ const HomeBanner = () => {
             >
                 <Grid
                     container
-                    spacing={3}
                     sx={{
                         display: "flex",
                         justifyContent: "space-around",
                         bgcolor: "white",
-                        p: { xs: 1, sm: 2, md: 5 },
-                        mt: 15,
+                        py: { xs: 4, sm: 4, md: 5, lg: 10 },
+                        px: { xs: 2, sm: 4, md: 5 },
+                        mt: 10,
                         borderRadius: 4,
-                        width: { xl: "80%", lg: "90%", md: "100%" }
+                        width: { xl: "80%", lg: "90%", md: "100%" },
+                        mx: "auto"
                     }}
                 >
-                    <Grid item xs={12} sm={12} md={6}>
+                    <Grid
+                        item
+                        xs={12}
+                        sm={12}
+                        md={6}
+                        sx={{ px: { xs: 0, sm: 0, md: 2, lg: 5 } }}
+                    >
                         <img
                             style={{ borderRadius: "10px", width: "100%" }}
                             src={bannerMainImg}
                             alt=""
                         />
                     </Grid>
-                    <Grid item xs={12} sm={12} md={6}>
+                    <Grid
+                        item
+                        xs={12}
+                        sm={12}
+                        md={6}
+                        sx={{
+                            px: { xs: 0, sm: 0, md: 2, lg: 5 },
+                            mt: { xs: 2, sm: 3, md: 0, lg: 0, xl: 0 }
+                        }}
+                    >
                         <Box className="banner-header-text">
                             <Typography variant="h5">Greetings from</Typography>
                             <Typography
@@ -45,8 +61,10 @@ const HomeBanner = () => {
                                     textAlign: "left",
                                     fontSize: {
                                         xs: "2em",
-                                        sm: "3em",
-                                        md: "3.5em"
+                                        sm: "2.5em",
+                                        md: "3em",
+                                        lg: "3em",
+                                        xl: "3.5em"
                                     }
                                 }}
                             >

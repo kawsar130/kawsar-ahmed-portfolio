@@ -1,5 +1,6 @@
 import React from "react";
-import ContactUs from "../../Pages/Contact/Contact";
+import Contact from "../../Pages/Contact/Contact";
+
 import About from "../About/About";
 
 import HomeBanner from "../HomeBanner/HomeBanner";
@@ -13,7 +14,7 @@ const Home = () => {
             <About></About>
             <OfferingClient></OfferingClient>
             <Projects></Projects>
-            <ContactUs></ContactUs>
+            <Contact></Contact>
         </div>
     );
 };

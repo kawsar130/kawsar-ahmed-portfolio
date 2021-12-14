@@ -2,7 +2,6 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home/Home";
-import Contact from "./components/Pages/Contact/Contact";
 import NotFound from "./components/NotFound/NotFound";
 
 import Navigation from "./components/Navigation/Navigation";
@@ -11,6 +10,7 @@ import Motobet from "./components/ProjectsDetail/Motobet/Motobet";
 import Tourisent from "./components/ProjectsDetail/Tourisent/Tourisent";
 import BlueMediq from "./components/ProjectsDetail/BlueMediq/BlueMediq";
 import Footer from "./components/Footer/Footer";
+import ContactTab from "./components/Pages/ContactTab/ContactTab";
 
 function App() {
     return (
@@ -21,7 +21,7 @@ function App() {
                     <Route path="/" element={<Home />}></Route>
                     <Route path="home" element={<Home />} />
 
-                    <Route path="contact" element={<Contact />} />
+                    <Route path="contact" element={<ContactTab />} />
                     <Route path="blog" element={<Blog />} />
 
                     <Route path="/projects/motobet" element={<Motobet />} />

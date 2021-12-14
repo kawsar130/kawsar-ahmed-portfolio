@@ -8,10 +8,8 @@
 .banner-header-text {
     display: flex;
     flex-direction: column;
-    height: 500px;
     justify-content: flex-start;
     align-items: flex-start;
     background-color: rgba(255, 255, 255, 0.8);
     color: darkslategrey;
-    margin-top: 2em;
 }

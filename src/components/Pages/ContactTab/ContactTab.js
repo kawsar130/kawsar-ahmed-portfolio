@@ -1,7 +1,8 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/system";
 import React from "react";
+import Contact from "../Contact/Contact";
 
-const Blog = () => {
+const ContactTab = () => {
     return (
         <Box className="banner-header">
             <Box
@@ -26,13 +27,11 @@ const Blog = () => {
                         mx: "auto"
                     }}
                 >
-                    <Typography variant="h4" sx={{ py: 5 }}>
-                        Blogs are coming soon. Stay Connected.
-                    </Typography>
+                    <Contact></Contact>
                 </Box>
             </Box>
         </Box>
     );
 };
 
-export default Blog;
+export default ContactTab;

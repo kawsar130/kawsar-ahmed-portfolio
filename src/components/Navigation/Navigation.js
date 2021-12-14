@@ -6,14 +6,13 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { makeStyles } from "@mui/styles";
 import { useTheme } from "@mui/material";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
 
 export default function Navigation() {
     const theme = useTheme();
@@ -40,7 +39,8 @@ export default function Navigation() {
         },
         mobileNavItem: {
             textDecoration: "none",
-            color: "grey"
+            color: "grey",
+            width: "100%"
         },
         appbarStyle: {
             backgroundColor: "red"
@@ -84,7 +84,22 @@ export default function Navigation() {
                             Kawsar Ahmed
                         </Typography>
 
-                        <Box className={navItemContainer}>
+                        <Box
+                            className={navItemContainer}
+                            sx={{
+                                display: "flex",
+                                justifyContent: "flex-end",
+                                width: {
+                                    xl: "80%",
+                                    lg: "90%",
+                                    md: "100%",
+                                    sm: "100%",
+                                    sx: "100%"
+                                },
+                                mx: "auto",
+                                px: { xs: 1, sm: 2, md: 5 }
+                            }}
+                        >
                             <Link className={navItem} to="/">
                                 <Button color="inherit">Home</Button>
                             </Link>
@@ -109,33 +124,27 @@ export default function Navigation() {
                         >
                             <List>
                                 <ListItem button>
-                                    <ListItemText>
-                                        <Link className={mobileNavItem} to="/">
-                                            Home
-                                        </Link>
-                                    </ListItemText>
+                                    <NavLink className={mobileNavItem} to="/">
+                                        Home
+                                    </NavLink>
                                 </ListItem>
                                 <Divider />
                                 <ListItem button>
-                                    <ListItemText>
-                                        <Link
-                                            className={mobileNavItem}
-                                            to="/contact"
-                                        >
-                                            Contact
-                                        </Link>
-                                    </ListItemText>
+                                    <NavLink
+                                        className={mobileNavItem}
+                                        to="/contact"
+                                    >
+                                        Contact
+                                    </NavLink>
                                 </ListItem>
                                 <Divider />
                                 <ListItem button>
-                                    <ListItemText>
-                                        <Link
-                                            className={mobileNavItem}
-                                            to="/blog"
-                                        >
-                                            Blog
-                                        </Link>
-                                    </ListItemText>
+                                    <NavLink
+                                        className={mobileNavItem}
+                                        to="/blog"
+                                    >
+                                        Blog
+                                    </NavLink>
                                 </ListItem>
                                 <Divider />
                             </List>

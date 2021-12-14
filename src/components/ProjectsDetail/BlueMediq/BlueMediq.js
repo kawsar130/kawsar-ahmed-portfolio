@@ -20,9 +20,10 @@ const BlueMediq = () => {
                         justifyContent: "space-around",
                         bgcolor: "white",
                         p: { xs: 1, sm: 2, md: 5 },
-                        mt: 15,
+                        mt: 10,
                         borderRadius: 4,
-                        width: { xl: "80%", lg: "90%", md: "100%" }
+                        width: { xl: "80%", lg: "90%", md: "100%" },
+                        mx: "auto"
                     }}
                 >
                     <Typography variant="h3" sx={{ mb: 10 }}>

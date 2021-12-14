@@ -5,7 +5,7 @@ import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/system";
 import emailKey from "../../emailkey.js/emailkey";
 
-const ContactUs = () => {
+const Contact = () => {
     const { Service_Id, Template_Id, User_Id } = emailKey;
     const [contactState, setContactState] = useState(false);
 
@@ -130,4 +130,4 @@ const ContactUs = () => {
     );
 };
 
-export default ContactUs;
+export default Contact;
