@@ -9,13 +9,15 @@ import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const url = "https://i.ibb.co/t3jRP9B/footer-for-portfolio.png";
+const url = "https://i.ibb.co/QHDWkgr/footer-for-portfolio.png";
 
 const footer = {
     background: `url(${url})`,
-    backgroundColor: "rgba(0, 0, 0, 0.80)",
+    backgroundColor: "rgba(0, 0, 0, 0.6)",
+    backgroundSize: "cover",
     backgroundBlendMode: "darken, luminosity",
-    marginTop: "4em"
+    marginTop: "4em",
+    borderRadius: "10px 10px 0 0"
 };
 
 const Footer = () => {
