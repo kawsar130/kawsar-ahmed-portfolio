@@ -209,8 +209,7 @@ const Footer = () => {
                         mx: "auto"
                     }}
                 >
-                    <Typography>Need Consultancy?</Typography>
-                    <Typography>|| Call Me ||</Typography>
+                    <Typography>Need Consultancy? Call Me!</Typography>
                     <Typography>01722-499529</Typography>
                 </Box>
             </Grid>
