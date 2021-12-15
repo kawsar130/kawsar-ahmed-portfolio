@@ -4,10 +4,21 @@ import React from "react";
 import Typical from "react-typical";
 import bannerMainImg from "../../../images/profile_photo.jpg";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 import "./HomeBanner.css";
 import { makeStyles } from "@mui/styles";
 
 const HomeBanner = () => {
+    const facebook = <FontAwesomeIcon icon={faFacebookSquare} />;
+    const github = <FontAwesomeIcon icon={faGithubSquare} />;
+    const twitter = <FontAwesomeIcon icon={faTwitterSquare} />;
+    const linkedin = <FontAwesomeIcon icon={faLinkedin} />;
+
     const useStyle = makeStyles({
         contactInfo: {
             display: "flex",
@@ -16,10 +27,15 @@ const HomeBanner = () => {
         },
         icon: {
             marginRight: "15px"
+        },
+        socialIcon: {
+            padding: "20px 20px 20px 5px",
+            marginTop: "10px",
+            opacity: "40%"
         }
     });
 
-    const { contactInfo, icon } = useStyle();
+    const { contactInfo, icon, socialIcon } = useStyle();
 
     return (
         <Box
@@ -162,6 +178,56 @@ const HomeBanner = () => {
                                     />
                                     <Typography>Dhaka, Bangladesh</Typography>
                                 </Box>
+                            </Box>
+                            <Box sx={{ display: "flex" }}>
+                                <a
+                                    href="https://github.com/kawsar130"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <Typography
+                                        className={socialIcon}
+                                        variant="h4"
+                                    >
+                                        {github}
+                                    </Typography>
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/in/kawsar130/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <Typography
+                                        className={socialIcon}
+                                        variant="h4"
+                                    >
+                                        {linkedin}
+                                    </Typography>
+                                </a>
+                                <a
+                                    href="https://twitter.com/kawsar130"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <Typography
+                                        className={socialIcon}
+                                        variant="h4"
+                                    >
+                                        {twitter}
+                                    </Typography>
+                                </a>
+                                <a
+                                    href="https://web.facebook.com/kawsar130"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <Typography
+                                        className={socialIcon}
+                                        variant="h4"
+                                    >
+                                        {facebook}
+                                    </Typography>
+                                </a>
                             </Box>
                         </Box>
                     </Grid>
