@@ -31,10 +31,13 @@ const Footer = () => {
         socialLink: {
             color: "white",
             textDecoration: "none"
+        },
+        socialLinkText: {
+            textDecoration: "none"
         }
     });
 
-    const { socialIcon, socialLink } = useStyle();
+    const { socialIcon, socialLink, socialLinkText } = useStyle();
 
     return (
         <Box className="footer" sx={footer}>
@@ -105,6 +108,7 @@ const Footer = () => {
                                     href="https://github.com/kawsar130"
                                     target="_blank"
                                     rel="noreferrer"
+                                    className={socialLinkText}
                                 >
                                     <Box
                                         sx={{
@@ -128,6 +132,7 @@ const Footer = () => {
                                     href="https://www.linkedin.com/in/kawsar130/"
                                     target="_blank"
                                     rel="noreferrer"
+                                    className={socialLinkText}
                                 >
                                     <Box
                                         sx={{
@@ -151,6 +156,7 @@ const Footer = () => {
                                     href="https://twitter.com/kawsar130"
                                     target="_blank"
                                     rel="noreferrer"
+                                    className={socialLinkText}
                                 >
                                     <Box
                                         sx={{
@@ -174,6 +180,7 @@ const Footer = () => {
                                     href="https://web.facebook.com/kawsar130"
                                     target="_blank"
                                     rel="noreferrer"
+                                    className={socialLinkText}
                                 >
                                     <Box
                                         sx={{
