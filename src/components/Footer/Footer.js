@@ -9,7 +9,7 @@ import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const url = "https://i.ibb.co/z4Rhfq9/footer-cropped.jpg";
+const url = "https://i.ibb.co/t3jRP9B/footer-for-portfolio.png";
 
 const footer = {
     background: `url(${url})`,
