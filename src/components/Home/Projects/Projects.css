@@ -1,0 +1,8 @@
+.projectBox {
+    transition: all 0.8s;
+}
+
+.projectBox:hover {
+    transform: scale(1.03);
+    transition: all 0.3s;
+}

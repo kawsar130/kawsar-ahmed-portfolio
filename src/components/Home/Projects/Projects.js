@@ -2,6 +2,7 @@ import { Button, Container, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Projects.css";
 
 const Projects = () => {
     return (
@@ -23,7 +24,7 @@ const Projects = () => {
                 </Typography>
                 <Box sx={{ mt: 5 }}>
                     <Grid container spacing={3}>
-                        <Grid item xs={12} md={4}>
+                        <Grid item xs={12} md={4} className="projectBox">
                             <Box
                                 sx={{
                                     p: 2,
@@ -63,13 +64,13 @@ const Projects = () => {
                                             variant="contained"
                                             sx={{ mt: 2 }}
                                         >
-                                            Check Demo
+                                            Details
                                         </Button>
                                     </Link>
                                 </Box>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} md={4}>
+                        <Grid item xs={12} md={4} className="projectBox">
                             <Box
                                 sx={{
                                     p: 2,
@@ -108,13 +109,13 @@ const Projects = () => {
                                             variant="contained"
                                             sx={{ mt: 2 }}
                                         >
-                                            Check Demo
+                                            Details
                                         </Button>
                                     </Link>
                                 </Box>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} md={4}>
+                        <Grid item xs={12} md={4} className="projectBox">
                             <Box
                                 sx={{
                                     p: 2,
@@ -153,7 +154,7 @@ const Projects = () => {
                                             variant="contained"
                                             sx={{ mt: 2 }}
                                         >
-                                            Check Demo
+                                            Details
                                         </Button>
                                     </Link>
                                 </Box>

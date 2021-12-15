@@ -1,0 +1,10 @@
+.technology {
+    color: gray;
+    transition: all 0.8s;
+}
+
+.technology:hover {
+    transform: scale(1.2);
+    color: darkslategrey;
+    transition: all 0.3s;
+}

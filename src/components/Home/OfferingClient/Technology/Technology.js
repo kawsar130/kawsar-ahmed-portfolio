@@ -1,10 +1,12 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import "./Technology.css";
 
 const Technology = ({ tech }) => {
     return (
         <Box
+            className="technology"
             sx={{
                 display: "flex",
                 alignItems: "center",
