@@ -147,7 +147,7 @@ const HomeBanner = () => {
                                         alt=""
                                         width="20px"
                                     />
-                                    <Typography>31 December, 1997</Typography>
+                                    <Typography>November 27, 1996</Typography>
                                 </Box>
                                 <Box className={contactInfo}>
                                     <img
