@@ -219,7 +219,7 @@ const Footer = () => {
                     }}
                 >
                     <Typography>Need Consultancy? Call Me!</Typography>
-                    <Typography>01722-499529</Typography>
+                    <Typography>+88 01722-499529</Typography>
                 </Box>
             </Grid>
         </Box>
