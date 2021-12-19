@@ -28,7 +28,8 @@ const HomeBanner = () => {
             padding: "8px 0 8px 0"
         },
         icon: {
-            marginRight: "15px"
+            marginRight: "15px",
+            opacity: "60%"
         },
         socialIcon: {
             padding: "20px 20px 20px 5px",
@@ -123,14 +124,20 @@ const HomeBanner = () => {
                             <Typography
                                 sx={{
                                     fontWeight: "bold",
-                                    color: "black",
+                                    color: "dimgray",
                                     mt: 3,
                                     textAlign: "left"
                                 }}
                             >
                                 Junior Frontend Developer
                             </Typography>
-                            <Typography sx={{ mt: 1, textAlign: "left" }}>
+                            <Typography
+                                sx={{
+                                    mt: 1,
+                                    textAlign: "left",
+                                    color: "gray"
+                                }}
+                            >
                                 Frontend React Web Developer especially working
                                 on MERN Stack Development. I am passionate to
                                 learn and work with new technologies that
@@ -138,7 +145,7 @@ const HomeBanner = () => {
                             </Typography>
                             <Box
                                 sx={{
-                                    pt: { xs: 0, sm: 0, md: 1, lg: 1, xl: 3 },
+                                    pt: { xs: 1, sm: 1, md: 1, lg: 1, xl: 3 },
                                     color: "gray"
                                 }}
                             >
