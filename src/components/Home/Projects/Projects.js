@@ -19,8 +19,8 @@ const Projects = () => {
                     My Latest Projects
                 </Typography>
                 <Typography variant="body1" sx={{ mt: 3 }}>
-                    Here are my some recent projects. For live preview of
-                    specific project, click on 'Details' below.
+                    Here are some of my recent projects. Click on "Details" for
+                    live preview.
                 </Typography>
                 <Box sx={{ mt: 5 }}>
                     <Grid container spacing={3}>
@@ -52,9 +52,9 @@ const Projects = () => {
                                         MotoBet
                                     </Typography>
                                     <Typography>
-                                        MotoBet provides motorcycle
-                                        specification and customer can place
-                                        order.
+                                        MotoBet is a B2C organization which
+                                        provides motorbike specifications and
+                                        also sells them.
                                     </Typography>
                                     <Link
                                         to="/projects/motobet"
@@ -143,8 +143,9 @@ const Projects = () => {
                                         BlueMediQ
                                     </Typography>
                                     <Typography>
-                                        Medical Equipment Supplier shop to
-                                        distribute medical equipments. shops.
+                                        Medical Equipment Supplier who
+                                        distribute medical equipments and
+                                        services.
                                     </Typography>
                                     <Link
                                         to="/projects/bluemediq"

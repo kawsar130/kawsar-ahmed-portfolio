@@ -2,7 +2,6 @@ import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import Typical from "react-typical";
-import bannerMainImg from "../../../images/profile_photo.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
@@ -12,6 +11,9 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import "./HomeBanner.css";
 import { makeStyles } from "@mui/styles";
+
+const bannerMainImg =
+    "https://i.ibb.co/t8BFXss/Portfolio-Photo-square-cropped.jpg";
 
 const HomeBanner = () => {
     const facebook = <FontAwesomeIcon icon={faFacebookSquare} />;

@@ -60,18 +60,18 @@ const Footer = () => {
                                 About Me
                             </Typography>
                             <Typography>
-                                Along with Web Development, I am expertize at
-                                some other activities that help me to get
-                                advantages from different perspective. I worked
-                                with Robotics and Automation and made some
-                                commercial projects that helped me to build a
-                                strong foundation on Electronic Devices and
-                                components, Micro-Controller and Hardware
-                                programming, Home Automation, Project
-                                Troubleshooting, and other related tasks. Beside
-                                that, I am very good at Photoshop, Microsoft
-                                Office, Solidworks 3D, Amateur photography,
-                                Online support, and higher computer proficiency.
+                                Along with Web Development, I gained expertise
+                                in some other skills that help me to get
+                                advantages in the related zones. I worked with
+                                Robotics and Automation and made some commercial
+                                projects that built a strong foundation on
+                                Electronic Devices and components,
+                                Micro-Controller and Hardware programming, Home
+                                Automation, Project Troubleshooting, and other
+                                related tasks. Beside that, I am very efficient
+                                in PhotoShop, Microsoft Office, SolidWorks 3D,
+                                Amateur photography, Online-Support, and higher
+                                computer proficiency.
                             </Typography>
                         </Box>
                     </Grid>
