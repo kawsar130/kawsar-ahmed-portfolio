@@ -68,7 +68,7 @@ const Footer = () => {
                                 Electronic Devices and components,
                                 Micro-Controller and Hardware programming, Home
                                 Automation, Project Troubleshooting, and other
-                                related tasks. Beside that, I am very efficient
+                                related tasks. Besides that, I am very efficient
                                 in PhotoShop, Microsoft Office, SolidWorks 3D,
                                 Amateur photography, Online-Support, and higher
                                 computer proficiency.

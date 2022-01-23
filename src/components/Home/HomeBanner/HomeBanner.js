@@ -12,8 +12,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./HomeBanner.css";
 import { makeStyles } from "@mui/styles";
 
-const bannerMainImg =
-    "https://i.ibb.co/t8BFXss/Portfolio-Photo-square-cropped.jpg";
+const bannerMainImg = "https://i.ibb.co/42fJPpy/portfolio-photo.jpg";
 
 const HomeBanner = () => {
     const facebook = <FontAwesomeIcon icon={faFacebookSquare} />;
