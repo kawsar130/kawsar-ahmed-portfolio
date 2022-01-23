@@ -1,5 +1,17 @@
 .banner-header {
-    background: rgb(2, 0, 36);
+    background: #1c92d2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to left,
+        #7edbee,
+        #1c92d2
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to left,
+        #83eaff,
+        #1c92d2
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /* background: rgb(2, 0, 36);
     background: -moz-linear-gradient(
         153deg,
         rgba(2, 0, 36, 1) 0%,
@@ -21,7 +33,7 @@
         rgba(105, 68, 255, 1) 0%,
         rgba(255, 255, 255, 1) 100%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ffffff",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ffffff",GradientType=1); */
 
     width: 100%;
 }

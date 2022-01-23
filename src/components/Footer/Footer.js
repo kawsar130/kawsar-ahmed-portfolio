@@ -2,6 +2,7 @@ import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import { makeStyles } from "@mui/styles";
+import "./Footer.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
@@ -13,7 +14,6 @@ const url = "https://i.ibb.co/QHDWkgr/footer-for-portfolio.png";
 
 const footer = {
     background: `url(${url})`,
-    backgroundColor: "rgba(0, 0, 0, 0.6)",
     backgroundSize: "cover",
     backgroundBlendMode: "darken, luminosity",
     marginTop: "4em",

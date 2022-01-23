@@ -1,0 +1,9 @@
+.footer {
+    background: #1c92d2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #42dfff,
+        #1c92d2
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #42dfff, #1c92d2);
+}

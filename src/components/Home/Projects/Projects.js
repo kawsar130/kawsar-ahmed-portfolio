@@ -31,7 +31,7 @@ const Projects = () => {
                                     bgcolor: "#e1fcfb",
                                     borderRadius: 2,
                                     boxShadow:
-                                        "1px 1px 20px rgba(46, 30, 102, 0.2) inset"
+                                        "1px 1px 20px rgba(46, 30, 102, 0.2)"
                                 }}
                             >
                                 <Box>
@@ -77,7 +77,7 @@ const Projects = () => {
                                     bgcolor: "#e1fcfb",
                                     borderRadius: 2,
                                     boxShadow:
-                                        "1px 1px 20px rgba(46, 30, 102, 0.2) inset"
+                                        "1px 1px 20px rgba(46, 30, 102, 0.2)"
                                 }}
                             >
                                 <Box>
@@ -122,7 +122,7 @@ const Projects = () => {
                                     bgcolor: "#e1fcfb",
                                     borderRadius: 2,
                                     boxShadow:
-                                        "1px 1px 20px rgba(46, 30, 102, 0.2) inset"
+                                        "1px 1px 20px rgba(46, 30, 102, 0.2)"
                                 }}
                             >
                                 <Box>
