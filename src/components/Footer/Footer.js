@@ -10,12 +10,7 @@ import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const url = "https://i.ibb.co/QHDWkgr/footer-for-portfolio.png";
-
 const footer = {
-    background: `url(${url})`,
-    backgroundSize: "cover",
-    backgroundBlendMode: "darken, luminosity",
     marginTop: "4em",
     borderRadius: "10px 10px 0 0"
 };
